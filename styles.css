@@ -1,0 +1,105 @@
+body{
+  background-color: #4c4c4c;/*Definimos color de la pagina*/
+}
+h1 {
+  font-family: Arial, sans-serif; /* Selecciona una fuente adecuada para el título */
+  font-size: 2.5rem; /* Establece el tamaño de la fuente en relación al tamaño de la pantalla */
+  color: #333; /* Define el color del texto */
+  text-align: center; /* Centra el título en la página */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  letter-spacing: 2px; /* Establece el espaciado entre caracteres */
+  margin: 0; /* Elimina el margen predeterminado para el título */
+  padding: 20px 0; /* Agrega un espacio interno para separar el título del contenido */
+  border-bottom: 2px solid #333; /* Agrega una línea decorativa debajo del título */
+}
+
+/* MENU*/
+nav {
+  background-color: #333; /* Define el color de fondo del menú */
+  height: 60px; /* Establece la altura del menú */
+}
+
+ul {
+  list-style: none; /* Elimina los marcadores de lista */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el espacio interno predeterminado */
+  display: flex; /* Hace que los elementos se distribuyan horizontalmente */
+  justify-content: space-around; /* Distribuye el espacio de manera uniforme */
+  align-items: center; /* Centra verticalmente los elementos del menú */
+  height: 100%; /* Ajusta la altura del menú a la del contenedor */
+}
+
+li {
+  height: 100%; /* Ajusta la altura de los elementos a la del menú */
+}
+
+a {
+  display: inline-block; /* Convierte el enlace en un elemento de bloque */
+  font-family: Arial, sans-serif; /* Selecciona una fuente adecuada */
+  font-size: 1.2rem; /* Establece el tamaño de la fuente */
+  color: #fff; /* Define el color del texto */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  padding: 0 20px; /* Agrega un espacio interno para separar los enlaces */
+  height: 100%; /* Ajusta la altura de los enlaces a la de los elementos */
+  line-height: 60px; /* Centra verticalmente los enlaces */
+}
+
+a:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+/* Agrega un estilo especial para el elemento activo */
+a.active {
+  background-color: #555; /* Cambia el color de fondo */
+}
+
+
+/*MENU DE IMAGENES*/
+/* CSS */
+.tabla {
+  display: flex; /* Para que la tabla sea flexible y se adapte al ancho de la página */
+  overflow-x: auto; /* Para agregar scroll horizontal si el contenido es muy ancho */
+  scroll-behavior: smooth; /* Para que la transición sea suave */
+}
+
+.fila {
+  display: flex; /* Para que las columnas estén en línea */
+  margin: 0 20px; /* Margen en ambos lados para que la transición tenga espacio */
+  transition: transform 0.3s ease; /* Transición de 0.3 segundos con efecto ease */
+}
+
+/* Estilos para las columnas */
+.columna {
+  flex-shrink: 0; /* Para que las columnas no se achiquen */
+  margin-right: 20px; /* Margen derecho para separar las columnas */
+  width: 600px; /* Ancho fijo para cada columna */
+}
+
+/* Pseudo-clases para los botones de scroll */
+.tabla::-webkit-scrollbar {
+  height: 10px; /* Altura del scrollbar */
+}
+
+.tabla::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Color del thumb del scrollbar */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.tabla::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Color del track del scrollbar */
+}
+
+/* Hover sobre la tabla para mostrar los botones de scroll */
+.tabla:hover {
+  scrollbar-width: thin; /* Ancho del scrollbar */
+}
+
+/* Hover sobre la fila para mostrar la transición */
+.fila:hover {
+  transform: translateX(-10px); /* Mover la fila 10px hacia la izquierda */
+}
+
+/* Hover sobre la columna para agregar sombra */
+.columna:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra de 10px alrededor de la columna */
+}
